@@ -7,7 +7,8 @@ def retrieve_repos(username):
 
   json_list = req.json()
 
-  return json_list
+  for i in range(0,len(json_list)):
+    print("Project Number: ",i+1)
 
 
-print(retrieve_repos(username))
+retrieve_repos(username)
